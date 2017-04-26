@@ -14,5 +14,3 @@ RUN apt-get update && apt-get install -y software-properties-common && add-apt-r
 RUN mkdir /yii
 VOLUME /yii
 WORKDIR /yii
-
-CMD tail -f /dev/null
