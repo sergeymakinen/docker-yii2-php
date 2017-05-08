@@ -1,6 +1,6 @@
 # Yii 2 PHP Dockerfile
 
-This repository contains **Dockerfile** of PHP CLI for Yii 2 on Ubuntu 16.04.02 LTS for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sergeymakinen/yii2-php/) published to [Docker Hub](https://hub.docker.com/).
+This repository contains **Dockerfile** of PHP CLI for Yii 2 tests on Ubuntu 16.04.02 LTS for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/sergeymakinen/yii2-php/) published to [Docker Hub](https://hub.docker.com/).
 
 [![Build Type](https://img.shields.io/docker/automated/sergeymakinen/yii2-php.svg?style=flat-square)](https://hub.docker.com/r/sergeymakinen/yii2-php/) [![Total Stars](https://img.shields.io/docker/stars/sergeymakinen/yii2-php.svg?style=flat-square)](https://hub.docker.com/r/sergeymakinen/yii2-php/) [![Total Pulls](https://img.shields.io/docker/pulls/sergeymakinen/yii2-php.svg?style=flat-square)](https://hub.docker.com/r/sergeymakinen/yii2-php/) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
