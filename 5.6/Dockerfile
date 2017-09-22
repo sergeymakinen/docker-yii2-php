@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y php5.6-cli php5.6-curl php5.6-gd php5.6
 
 # CUBRID
 RUN apt-get update && apt-get install -y php-pear php5.6-dev && pecl channel-update pecl.php.net \
-    && pecl install cubrid pdo_cubrid \
+    && pecl install cubrid-9.3.0.0001 pdo_cubrid-9.3.0.0002 \
     && echo 'extension=/usr/lib/php/20131226/cubrid.so' > /etc/php/5.6/mods-available/cubrid.ini \
     && echo 'extension=/usr/lib/php/20131226/pdo_cubrid.so' > /etc/php/5.6/mods-available/pdo_cubrid.ini \
     && phpenmod cubrid pdo_cubrid \
