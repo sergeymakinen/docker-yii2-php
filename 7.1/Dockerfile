@@ -14,10 +14,11 @@ RUN apt-get update && apt-get install -y php-pear php7.1-dev && pecl channel-upd
     && rm -rf $ORACLE_HOME/lib/sdk \
     && TMP_DIR="$(mktemp -d)" && cd "$TMP_DIR" && apt-get source php7.1 \
     && cd $(find . -name 'php7.1-*' -type d)/ext/pdo_oci && phpize && ./configure && make \
-    && mv modules/pdo_oci.so /usr/lib/php/20160303 && rm -rf "$TMP_DIR" \
+    && mv modules/pdo_oci.so /usr/lib/php/20160303 \
     && echo 'extension=/usr/lib/php/20160303/oci8.so' > /etc/php/7.1/mods-available/oci8.ini \
     && echo 'extension=/usr/lib/php/20160303/pdo_oci.so' > /etc/php/7.1/mods-available/pdo_oci.ini \
     && phpenmod oci8 pdo_oci \
+    && rm -rf "$TMP_DIR" \
     && rm -rf /var/lib/apt/lists/* && apt-get purge -y --auto-remove php-pear php7.1-dev
 
 # sqlsrv

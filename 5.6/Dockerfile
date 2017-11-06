@@ -29,8 +29,9 @@ RUN apt-get update && apt-get install -y php-pear php5.6-dev curl && pecl channe
     && ./configure \
     && sed -i 's#function_entry pdo_oci_functions#zend_function_entry pdo_oci_functions#g' pdo_oci.c \
     && make \
-    && mv modules/pdo_oci.so /usr/lib/php/20131226 && rm -rf "$TMP_DIR" \
+    && mv modules/pdo_oci.so /usr/lib/php/20131226 \
     && echo 'extension=/usr/lib/php/20131226/oci8.so' > /etc/php/5.6/mods-available/oci8.ini \
     && echo 'extension=/usr/lib/php/20131226/pdo_oci.so' > /etc/php/5.6/mods-available/pdo_oci.ini \
     && phpenmod oci8 pdo_oci \
+    && rm -rf "$TMP_DIR" \
     && rm -rf /var/lib/apt/lists/* && apt-get purge -y --auto-remove php-pear php5.6-dev curl
