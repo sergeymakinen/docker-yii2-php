@@ -1,6 +1,6 @@
 FROM sergeymakinen/yii2-php:base
 
-LABEL maintainer "sergey@makinen.ru"
+LABEL maintainer="sergey@makinen.ru"
 
 # PHP 7.1
 RUN apt-get update && apt-get install -y php7.1-cli php7.1-curl php7.1-gd php7.1-intl php7.1-mbstring php7.1-phpdbg php7.1-xml php7.1-zip \

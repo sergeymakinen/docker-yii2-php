@@ -1,6 +1,6 @@
 FROM sergeymakinen/yii2-php:base
 
-LABEL maintainer "sergey@makinen.ru"
+LABEL maintainer="sergey@makinen.ru"
 
 # PHP 5.6
 RUN apt-get update && apt-get install -y php5.6-cli php5.6-curl php5.6-gd php5.6-intl php5.6-mbstring php5.6-xml php5.6-zip \

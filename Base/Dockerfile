@@ -1,6 +1,6 @@
 FROM sergeymakinen/oracle-instant-client:11.2
 
-LABEL maintainer "sergey@makinen.ru"
+LABEL maintainer="sergey@makinen.ru"
 
 # PHP
 RUN apt-get update && apt-get install -y software-properties-common \
