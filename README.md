@@ -6,6 +6,7 @@ This repository contains **Dockerfiles** of PHP CLI for Yii 2 tests on Ubuntu 16
 
 ## Supported tags and respective `Dockerfile` links
 
+* `7.2` [(7.2/Dockerfile)](https://github.com/sergeymakinen/docker-yii2-php/blob/master/7.2/Dockerfile)
 * `7.1` [(7.1/Dockerfile)](https://github.com/sergeymakinen/docker-yii2-php/blob/master/7.1/Dockerfile)
 * `7.0` [(7.0/Dockerfile)](https://github.com/sergeymakinen/docker-yii2-php/blob/master/7.0/Dockerfile)
 * `5.6` [(5.6/Dockerfile)](https://github.com/sergeymakinen/docker-yii2-php/blob/master/5.6/Dockerfile)
